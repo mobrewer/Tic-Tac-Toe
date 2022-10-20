@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./tic-tac-toe.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+                <h1>Tic-Tac-Toe</h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+            Player <span class="dispaly-player playerO">O</span>'s turn
+        </section>
+    </main>
+    <div class= "board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <!-- These are the 9 divs that were created to be able to edit them later on whent the grid is created -->
+</div>
+<div class="winning-message" id="winningMessage"> 
+    <!-- /Need this to be able to display the winner -->
+    <div data-winning-message-text></div>
+    <!-- This will be the message that is given depending on who won -->
+    <button id="restartButton">Restart Game</button>
+    <!-- This will be the button that will be needed to replay the game -->
+</div>
+</body>
+</html>
